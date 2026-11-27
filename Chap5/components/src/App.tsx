@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './App.css';
 import Home from './Home';
 
 function App() {
-  return <Home label="Hello World" />;
+  const [label, setLabel] = useState('hello world');
+  return <Home label={label} />;
 }
 
 export default App;
